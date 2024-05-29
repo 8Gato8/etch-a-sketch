@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="controls-container">
+      <button type="button" class="set">Set a number of boxes per side</button>
+      <div class="input-container">
+        <label for="palette">Pick a color: </label>
+        <input id="palette" class="palette" type="color" value="#f6b73c" />
+        <button type="button" class="multicolor">Toggle multicolor mode</button>
+      </div>
+
+      <button type="button" class="erase">Erase</button>
+    </div>
+    <div class="box-container"></div>
   </body>
 </html>
